@@ -4,6 +4,10 @@ body {
     padding: 0;
 }
 
+header {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
 header h1 {
     background-color: #333;
     color: #fff;
@@ -14,11 +18,16 @@ header h1 {
     margin: 0;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
 nav a {
     color: #2c2828;
     text-decoration: none;
-    margin: 15px;
-    padding: 15px;
+    margin-left: 15px;
 }
 
 nav a:hover {
