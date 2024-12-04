@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -12,9 +12,6 @@ header h1 {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
-}
-
-header h1 {
     margin: 0;
 }
 
@@ -25,9 +22,9 @@ nav {
 }
 
 nav a {
-    color: #2c2828;
+    color: #333;
     text-decoration: none;
-    margin-left: 15px;
+    margin: 0 15px;
 }
 
 nav a:hover {
@@ -43,9 +40,18 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        margin: 5px 0;
+    }
 }
 
 
