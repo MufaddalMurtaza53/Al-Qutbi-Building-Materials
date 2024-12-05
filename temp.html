@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function loadNav() {
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('nav-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navigation:', error));
+        }
+        window.onload = loadNav;
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to AL QUTBI BUILDING MATERIALS</h1>
+        <div id="nav-placeholder"></div>
+    </header>
+    <main>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="products/buildingMaterials.webp" alt="">
+                <h3>Building Materials</h3>
+            </div>
+            <div class="product-card">
+                <img src="products/structuralMaterials.webp" alt="">
+                <h3>Structural Materials</h3>
+            </div>
+            <div class="product-card">
+                <img src="products/plumbingSupplies.webp" alt="">
+                <h3>Plumbing Supplies</h3>
+            </div>
+            <div class="product-card">
+                <img src="products/electricalSupplies.webp" alt="">
+                <h3>Electrical Supplies</h3>
+            </div>
+            <div class="product-card">
+                <img src="products/wood&carpentry.webp" alt="">
+                <h3>Wood & Carpentry</h3>
+            </div>
+            <div class="product-card">
+                <img src="products/paints&Finishes.webp" alt="">
+                <h3>Paints & Finishes</h3>
+            </div>
+            <div class="product-card">
+                <img src="products/tools&equipment.webp" alt="">
+                <h3>Tools & Equipment</h3>
+            </div>
+            <div class="product-card">
+                <img src="products/customSolutions.webp" alt="">
+                <h3>Custom Solutions</h3>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Al Qutbi Building Materials. All rights reserved.</p>
+    </footer>
+</body>
+</html>
