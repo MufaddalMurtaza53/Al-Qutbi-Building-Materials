@@ -10,7 +10,6 @@ body {
 header {
     text-align: center;
     border-bottom: 1px solid #ddd;
-    /* background: linear-gradient(135deg, #8B4513, #D2691E); */
     background-color: white;
     padding: 20px 0 0 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -61,7 +60,6 @@ section {
 }
 
 footer {
-    /* background:linear-gradient(135deg, #8B4513, #D2691E); */
     background-color: #004489;
     color: #fff;
     text-align: center;
