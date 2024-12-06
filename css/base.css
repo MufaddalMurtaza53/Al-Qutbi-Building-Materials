@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: "Raleway", sans-serif;
     font-style: normal;
@@ -44,6 +47,10 @@ nav a:hover {
     /* text-decoration: underline; */
     background: rgba(255, 255, 255, 0.2);
     transform: scale(1.05);
+}
+
+nav a:focus {
+    outline: 2px solid #fff;
 }
 
 main {

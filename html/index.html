@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width", initial-scale="1.0">
+    <title>AL QUTBI BUILDING MATERIALS LLC</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <script>
+        function loadNav() {
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('nav-placeholder').innerHTML = data;
+                })
+                .catch(error => console.error('Error loading navigation:', error));
+        }
+        window.onload = loadNav;
+    </script>
+</head>
+<body>
+    <header>
+        <h1>AL QUTBI BUILDING MATERIALS</h1>
+        <div id="nav-placeholder"></div>
+    </header>
+    <main>
+        <section class="welcome-section">
+            <p>Al Qutbi Building Materials is a trusted name in the construction and building industry, providing a comprehensive range of high-quality materials to contractors, architects, and DIY enthusiasts. Known for its commitment to quality, reliability, and customer satisfaction, Al Qutbi Building Materials has established itself as a one-stop shop for all construction needs.</p>    
+        </section>
+        <section class="advantages-section">
+            <h3>Competitive Advantages</h3>
+            <ul>
+                <li>A wide range of products under one roof.</li>
+                <li>Competitive pricing without compromising quality.</li>
+                <li>Reliable delivery services tailored to project timelines.</li>
+            </ul>
+        </section>
+        <section class="choose-section">
+            <h3>Why Choose Al Qutbi Building Materials?</h3>
+            <p>At Al Qutbi Building Materials, we don’t just supply products; we provide solutions. Our dedication to quality, timely delivery, and customer satisfaction sets us apart as a reliable partner for all construction needs.</p>
+            <p>Let us help you build a stronger future!</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Al Qutbi Building Materials. All rights reserved.</p>
+    </footer>
+</body>
+</html>
