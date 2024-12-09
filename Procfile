@@ -1,1 +1,1 @@
-web: gunicorn aqbm:aqbm
+web: gunicorn app:app

@@ -11,7 +11,7 @@ app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
 app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')  # your email address
 app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')  # your email password
-app.config['MAIL_DEFAULT_SENDER'] = ''
+app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_DEFAULT_SENDER')
 
 mail = Mail(app)
 
@@ -29,7 +29,7 @@ def send_message():
         # Create email message
         msg = Message(
             'New Message from Contact Form',
-            recipients=['alqutbibm@gmail.com'],  # Replace with your email
+            recipients=['mufaddalmurtaza27@gmail.com'],  # Replace with your email
         )
         msg.body = f"Name: {name}\nEmail: {email}\nMessage: {message}"
 
