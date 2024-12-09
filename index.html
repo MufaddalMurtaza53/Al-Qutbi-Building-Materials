@@ -9,23 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon_io/favicon.ico" type="image/x-icon">
-    <script>
-        function loadNav() {
-            fetch('nav.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('nav-placeholder').innerHTML = data;
-                })
-                .catch(error => console.error('Error loading navigation:', error));
-        }
-        window.onload = loadNav;
-    </script>
+    <link rel="icon" href="../favicon_io/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
         <h1>AL QUTBI BUILDING MATERIALS</h1>
-        <div id="nav-placeholder"></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="templates/products.html">Products</a>
+            <a href="templates/target.html">Target Market</a>
+            <a href="templates/clients.html">Clients</a>
+            <a href="templates/contact.html">Contact</a>
+        </nav>
     </header>
     <main>
         <section class="welcome-section">
