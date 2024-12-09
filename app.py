@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_mail import Mail, Message
+import os
 
 app = Flask(__name__)
 
@@ -8,9 +9,9 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # or your email provider's SMTP se
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USE_SSL'] = False
-app.config['MAIL_USERNAME'] = 'alqutbibm@gmail.com'  # your email address
-app.config['MAIL_PASSWORD'] = 'hxdq vsnw hpvi yltq'  # your email password
-app.config['MAIL_DEFAULT_SENDER'] = 'alqutbibm@gmail.com'
+app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')  # your email address
+app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')  # your email password
+app.config['MAIL_DEFAULT_SENDER'] = ''
 
 mail = Mail(app)
 
